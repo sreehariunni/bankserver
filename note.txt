@@ -1,0 +1,92 @@
+Server creation  - using express
+------------------
+
+install express    -npm i express
+
+1. import expresss
+2. create an app using express
+3. create port number               server port no 3000series
+4. creare request ......
+
+
+
+nodemon server
+---------------
+installation
+-npm i -g nodemon
+
+User Aunthentication Using express
+----------------------------------
+
+JWT(json web token) token
+--------------------------
+j sonwebtoken  -library      install-npm i jsonwebtoken
+sign()         - method used for generate token
+verify()       - method to verify tokens
+
+
+
+Middlewares
+------------
+-Middlewares have the capacity to control server requests
+-its a function with 3 arguments(request,response,next)
+    
+    2 types -
+       1.Application Specific Middlewares
+       2.Router Specific Middlewares
+
+
+
+Solving Run-Time errors in js
+-----------------------------
+try catch
+try{
+    error causing code
+}
+catch{
+    solution
+}
+
+
+
+Mongo DB
+---------
+
+-mongodb server
+-shell commands in mongodb
+                                                                                  ->command
+ -to see the databases
+
+     ->show dbs 
+
+     -open databases
+         ->use database_name
+
+-view collections inside databases
+      -> show collections
+
+- to view datas inside collections
+    -> db.collection_name.find()
+
+-to view any single data inside collections
+    ->db.collection_name.findOne({unique data to identify})
+
+-to insert new data
+    ->db.collection_name.insertOne({data})
+
+-to view any single data according to the condition
+    ->db.collection_name.findOne({condition})              single data
+        ->db.collection_name.find({condition})              all data
+
+-delete
+     ->delete single data 
+          ->db.collection_name.deleteOne({data})
+
+          -delete count=number   
+          -delete count=0    if nothing deleted
+
+-update
+    ->db.collection_name.updateOne({data to be update},{new data})
+
+
+crud - create read update delete 
